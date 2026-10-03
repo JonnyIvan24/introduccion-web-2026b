@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones y animaciones</title>
+
+    <style>
+        div {
+            width: 150px;
+            height: 80px;
+            background-color: red;
+            margin: 10px;
+        }
+
+        .a {
+            transform: rotate(20deg);
+        }
+
+        .b {
+            transform: scaleY(1.5);
+        }
+
+        div.c {
+            width: 80px;
+            transition: width 3s;
+            margin: 0;
+        }
+
+        div.c:hover {
+            width: 300px;
+        }
+
+        #a {
+            transition-timing-function: cubic-bezier(.25,.76,.9,.17);
+        }
+        #b {
+            transition-timing-function: ease;
+        }
+        #c {
+            transition-timing-function: ease-in;
+        }
+        #d {
+            transition-timing-function: ease-out;
+        }
+        #e {
+            transition-timing-function: ease-in-out;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="a"></div>
+    <br>
+    <div class="b"></div>
+    <br>
+    <p>transición</p>
+    <div class="c" id="a">Linear</div>
+    <div class="c" id="b">ease</div>
+    <div class="c" id="c">ease-in</div>
+    <div class="c" id="d">ease-out</div>
+    <div class="c" id="e">ease-in-out</div>
+</body>
+</html>
