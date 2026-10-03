@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+
+    <style>
+        /* selector por nombre */
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-family: Verdana;
+            font-size: 20px;
+        }
+
+        /* selector por id */
+        #title {
+            background-color: blue;
+        }
+
+        /* selector por combinado por nombre y clase */
+        table.content {
+            border-color: black;
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        /* Selectores de pseudo-clase */
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: hotpink;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        /* selector de pseudo-elementos */
+
+        p::first-letter {
+            color: red;
+            font-size: xx-large;
+        }
+
+        p::first-line {
+            color: blue;
+            font-variant: small-caps;
+        }
+
+        /* selector de atributo */
+        a[target=_blank] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#">Link</a>
+    
+    <h1 id="title" class="content">Usuarios</h1>
+    <p>Lista de usuarios</p>
+
+    <table class="content">
+        <tr style="background-color: brown; color: whitesmoke;">
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr style="background-color: rgb(255 191 71);">
+            <td>Ana</td>
+            <td>Uribe</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Walter</td>
+            <td>White</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+    <p>Esto es un texto de ejemplo donde la primera letra se pinta de manera capital
+        y la primera la line tiene un estilo diferente a las demas
+    </p>
+
+    <a href="https://www.cuvalles.udg.mx/">Esto es otro link</a>
+    <a href="http://educon.cuvalles.udg.mx/" target="_blank">Esto es un link</a>
+</body>
+</html>
