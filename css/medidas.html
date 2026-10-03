@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas</title>
+
+    <style>
+        div {
+            background-color: red;
+            height: 200px;
+            width: 50%;
+            border: 5px double black;
+            border-radius: 5px;
+        }
+
+        .a {
+            visibility: hidden; /* sigue ocupando espacio */
+            /* display: none; no ocupa espacio */
+        }
+
+        .fraccion {
+            font-feature-settings: "frac";
+        }
+    </style>
+
+</head>
+<body>
+    <p>Esto es un rectangulo en rojo, con una altura de 200 px y el ancho al 50%</p>
+    <div></div>
+
+    <h1>Visible</h1>
+    <h1 class="a">No visible</h1>
+    <p>El segundo encabezado sigue ocupando espacio</p>
+
+    <p class="fraccion">Esto es una fracción 1/2</p>
+</body>
+</html>
