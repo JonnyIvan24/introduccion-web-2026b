@@ -13,7 +13,37 @@
         <label for="lastName">Apellido:</label><br>
         <input type="text" name="lastName" id="lastName">
 
+        <textarea name="comentarios" rows="10" cols="30">Vamos a los pollos hermanos</textarea>
+
+        <select name="cars">
+            <option value="">Selecciona un valor</option>
+            <option value="1">Volvo</option>
+            <option value="2" selected>Saab</option>
+            <option value="3">Fiat</option>
+            <option value="4">Audi</option>
+        </select>
+
+        <br>
+
+        <!-- radio button -->
+        <p>Seleccione un género:</p>
+        <input type="radio" id="hombre" name="genero" value="hombre">
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" id="mujer" name="genero" value="mujer" checked>
+        <label for="mujer">Mujer</label><br>
+
+        <!-- checkbox -->
+        <input type="checkbox" id="vehicle1" name="vehicle" value="Bici">
+        <label for="vehicle1"> Tengo una bici</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle" value="Carro">
+        <label for="vehicle2"> Tengo un carro</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle" value="Bote">
+        <label for="vehicle3"> Tengo un bote</label><br>
+
+
         <input type="submit" value="Guardar">
+        <input type="reset" value="borrar">
+        <button type="button" onclick="alert('Hello Walter!')">Da clic!</button>
     </form>
 </body>
 </html>
