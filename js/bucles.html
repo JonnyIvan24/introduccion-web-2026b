@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+<body>
+    <script>
+        // bucles
+        for (let paso = 0; paso < 6; paso++) {
+            console.log('Paso: ' + paso)
+        }
+        
+        var n = 0
+
+        // debe de cumplirse la condición para ejecutarse
+        while (n < 6) {
+            console.log(n)
+            n++
+        }
+
+        var x = 0
+
+        // minimo se ejecuta una vez
+        do {
+            console.log(x)
+            x++
+        } while (x < 6);
+
+        // iterador
+
+        var numeros = [45, 3, 50, 20, 32, 10]
+        numeros.forEach(miIteradorNumerico)
+
+        function miIteradorNumerico(value, index) {
+            console.log(value, index)
+        }
+    </script>
+</body>
+</html>
