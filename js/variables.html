@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        var x, y, a, b;
+
+        console.log(x)
+
+        x = "5"
+        y= '3.2'
+
+        document.write(x + y + ' ' + typeof(x+y))
+        document.write(x * y + ' ' + typeof(x*y))
+
+        a = 10 
+        b = 3
+
+        console.log(10 % 3)
+
+        // arrays
+
+        var miArreglo = ['juan', 33, true, , 'Uribe']
+
+        console.log(miArreglo[0]) // primer indice
+
+        console.log(miArreglo.length) // el tamaño del arreglo
+
+        console.log(miArreglo[miArreglo.length - 1]) // último indice
+
+        // objetos o tuplas
+
+        var miObjeto = {
+            nombre: 'juan',
+            apellido: 'Uribe',
+            edad: 35,
+            inscrito: true
+        }
+
+        console.log(miObjeto.edad)
+
+    </script>
+</body>
+</html>
