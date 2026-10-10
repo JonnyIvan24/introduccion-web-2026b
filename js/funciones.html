@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+
+        var num1 = 2
+        var num2 = 3
+
+        console.log('suma ' + suma(num1, num2))
+        console.log('resta ' + resta(num1, num2))
+        console.log('multiplicación ' + multiplicacion())
+        console.log('división ' + division(10, 2))
+
+        function suma(a, b) {
+            return a + num1
+        }
+
+        function resta(a, b) {
+            return a - b
+        }
+
+        // sin parámetros
+        function multiplicacion() {
+            return num1 * num2
+        }
+
+        // globales y locales
+        function division(num1) {
+            return this.num1 / num2
+        }
+
+        // función anónima
+        var numeros = [45, 3, 50, 20, 32, 10]
+        
+        numeros.forEach(function(value, index) {
+            console.log(value, index)
+        })
+
+        numeros.forEach(value => console.log(value))
+
+    </script>
+</body>
+</html>
